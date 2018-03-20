@@ -2,7 +2,8 @@ var express = require("express");
 var mongoose = require("mongoose");
 var exphbs = require("express-handlebars");
 var bodyParser = require("body-parser");
-var scrape = require("./cheerio/scripts/scrape");
+var scrape = require("./scripts/scrape");
+var cheerio = require('cheerio');
 
 
 var PORT = process.env.PORT || 3000;
